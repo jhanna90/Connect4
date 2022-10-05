@@ -1,0 +1,64 @@
+/* game board table */
+h1 {
+  text-align: center;
+  font-family: monospace;
+  font-size: 3em;
+}
+
+#game {
+  text-align: center;
+}
+
+#board {
+  margin: 5px auto;
+  border-collapse: separate;
+  text-indent: initial;
+  border-spacing: 2px;
+  border: solid 1px navy;
+  background-color: navy;
+}
+
+#board td {
+  width: 50px;
+  height: 50px;
+  border: solid 1px #666;
+  border-radius: 50%;
+  position: relative;
+}
+
+td {
+  display: table-cell;
+  vertical-align: inherit;
+  background-color: white;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  /* TODO: make into circles */
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.p1 {
+  background-color: red;
+}
+
+.p2 {
+  background-color: blue;
+}
+
+/* TODO: make pieces red/blue,  depending on player 1/2 piece */
+
+/* column-top is table row of clickable areas for each column */
+
+#click-column td {
+  border: dashed 1px lightgray;
+}
+
+#click-column td:hover {
+  background-color: gold;
+}
